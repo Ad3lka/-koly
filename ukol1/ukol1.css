@@ -42,7 +42,7 @@ text-decoration: underline;
 }
 body {
   margin: 0;
-  background-image: url('pozdadí.png');
+  background color: #f0f0f0; /* světle šedá */
   font-family: sans-serif;
 } 
 
