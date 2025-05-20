@@ -4,3 +4,53 @@ h1 {
     font-size: 2.5em;
     color: blue;
 }
+.radek {
+  display: flex;
+  align-items: center; /* zarovná obrázek a text na střed výškově */
+  gap: 20px; /* mezera mezi obrázkem a textem */
+}
+
+.obrazek {
+  width: 150px;
+  aspect-ratio: 1 / 1; /* poměr 1:1 */
+  object-fit: cover; /* výřez obrázku, aby držel tvar */
+  border-radius: 8px; /* volitelné, zakulacení rohů */
+}
+
+.text {
+  font-size: 16px;
+}
+.p {
+  font-size: 16px;
+  line-height: 1.5; /* výška řádku */
+  font-family: monospace; /* písmo */
+  color: #a15454; /* barva textu */
+  margin: 0; /* odstranění výchozího okraje */
+  padding: 0; /* odstranění výchozího vnitřního okraje */
+  text-align: justify; /* zarovnání textu do bloku */
+  text-justify: inter-word; /* zarovnání textu do bloku */
+  text-indent: 1em; /* odsazení prvního řádku */
+}
+.h2 {
+font-size: 1.5em;
+text-align: center;
+font-variant: small-caps;
+}
+body {
+  margin: 0;
+  background-color: white;
+  font-family: sans-serif;
+}
+
+.hlavicka {
+  height: 800px;
+  background-color: #002366; /* tmavě modrá */
+  color: white;
+  text-align: center;
+  padding-top: 40px;
+  font-size: 24px;
+}
+
+.obsah {
+  padding: 20px;
+}
