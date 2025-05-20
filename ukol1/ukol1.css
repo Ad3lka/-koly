@@ -24,7 +24,7 @@ h1 {
   font-size: 16px;
   line-height: 1.5; /* výška řádku */
   font-family: monospace; /* písmo */
-  color: #a15454; /* barva textu */
+  color: #333; /* barva textu */
   margin: 0; /* odstranění výchozího okraje */
   padding: 0; /* odstranění výchozího vnitřního okraje */
   text-align: justify; /* zarovnání textu do bloku */
@@ -35,22 +35,39 @@ h1 {
 font-size: 1.5em;
 text-align: center;
 font-variant: small-caps;
+font-weight: bold;
+text-transform: uppercase;
+color: #002366; /* tmavě modrá */
+text-decoration: underline;
 }
 body {
   margin: 0;
-  background-color: white;
+  background-image: url('pozdadí.png');
   font-family: sans-serif;
-}
+} 
 
 .hlavicka {
-  height: 800px;
-  background-color: #002366; /* tmavě modrá */
+  height: 100vh;
+  width: 100vw;
+   background-color: #002366; /* tmavě modrá */
+  background-size: cover; /* pokrytí celé plochy */
+  background-position: center; /* vycentrování obrázku */
+  background-repeat: no-repeat; /* nezobrazovat opakovaně */
   color: white;
   text-align: center;
   padding-top: 40px;
-  font-size: 24px;
+  font-size: 200px;
+    font-family: Arial, Helvetica, sans-serif, bold, sans-serif;
+  font-weight: bold;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+tex transform: uppercase;
 }
 
 .obsah {
   padding: 20px;
 }
+
+<--!background-color: #002366; /* tmavě modrá */ !-->
