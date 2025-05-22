@@ -1,9 +1,12 @@
 import MyComponents from "./MyComponents"
+import Card from './card.jsx' 
 function App() {
   return (
-    <div>
-      <h1>Grocery List</h1>
-      <MyComponents />
+
+      <div>
+         <Card />
+      
+      
     </div>
   )
   // <div>
