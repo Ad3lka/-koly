@@ -1,5 +1,6 @@
 
 import React, { useState } from 'react';
+import './button.css'
 
 function MyComponents() {
 const [foods, setFoods] = useState([]);
@@ -33,10 +34,9 @@ setFoods(foods.filter((_, i) => i !== index));
                     }
                 }}
             />
-            <button onClick={handleAddFood}>Add Food</button>
+            <button className='button' onClick={handleAddFood}>Add Food</button>
         </div>
     );
  }
 // Přidejte inline styl pro zmenšení tlačítka
-<button onClick={handleAddFood} style={{ fontSize: '12px', padding: '4px 8px' }}>Add Food</button>
 export default MyComponents;
