@@ -1,21 +1,29 @@
 import "./app.css";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import FormInput from "./componets/Forminputs";
 
 const App = () => { 
-  const [username,setUsername] = useState("");
-  
+  //const [username,setUsername] = useState("");
+   
 
-  console.log(username);
+
+  console.log("re-rendered");
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  const data =new FormData(e.target);
+
+  console.log (data)
+  };
 
   
   return (
     <div className="app">
-      <form>
-        <FormInput placeholder="Username" setUsername={setUsername} />
-        <FormInput placeholder="Email" />
-        <FormInput placeholder="Full Name" />
-        <FormInput placeholder="else" />
+      <form onSubmit={handleSubmit}>
+        <FormInput name= "username" placeholder="Username"/>
+        <FormInput name="email" placeholder="Email" />
+        <FormInput name="fullname" placeholder="Full Name" />
+        <FormInput name="else" placeholder="else" />
+        <button>Submit</button>
       </form>
     </div>
   );
